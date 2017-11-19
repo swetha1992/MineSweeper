@@ -6,7 +6,7 @@ import Minesweeper.Utility.ReadPropertyFile;
  * Class the represents each operation specified by the player.
  * It has operation (o or f which is open/Flag ) to be performed at (x,y)
  */
-public class PlayerOperation {
+public class PlayerOption {
     int playerSelectionX;
     int playerSelectionY;
     String operation;
@@ -17,7 +17,7 @@ public class PlayerOperation {
      * @param playerSelectionY
      * @param operation
      */
-    public PlayerOperation(int playerSelectionX, int playerSelectionY, String operation) {
+    public PlayerOption(int playerSelectionX, int playerSelectionY, String operation) {
         this.playerSelectionX = playerSelectionX;
         this.playerSelectionY = playerSelectionY;
         this.operation = operation;

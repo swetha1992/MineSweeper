@@ -1,7 +1,7 @@
 package Minesweeper.Game;
 
 import Minesweeper.Model.Grid;
-import Minesweeper.Model.PlayerOperation;
+import Minesweeper.Model.PlayerOption;
 import Minesweeper.Utility.ReadPropertyFile;
 
 
@@ -47,7 +47,7 @@ public class Play {
      * reads player operation from user.
      * @return
      */
-    public PlayerOperation readPlayerInput() {
+    public PlayerOption readPlayerInput() {
         System.out.println(ENTER_OPERATION);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String playerInput = null;
@@ -69,29 +69,29 @@ public class Play {
             System.out.println(INVALID_OPERATION);
             readPlayerInput();
         }
-        PlayerOperation playerOperation = new PlayerOperation(playerSelectionX, playerSelectionY, operation);
-        if (!playerOperation.isvalidOperation()) {
+        PlayerOption playerOption = new PlayerOption(playerSelectionX, playerSelectionY, operation);
+        if (!playerOption.isvalidOperation()) {
             System.out.println(INVALID_OPERATION);
             readPlayerInput();
         }
-        return playerOperation;
+        return playerOption;
     }
 
     /**
      * Function inspects grid for the specified player operation.
      * @param grid
-     * @param playerOperation
+     * @param playerOption
      * @return
      * @throws IOException
      */
 
-    public String inspectSquare(Grid grid, PlayerOperation playerOperation) throws IOException {
+    public String inspectSquare(Grid grid, PlayerOption playerOption) throws IOException {
         String status = INVALID_OPERATION;
-        char value = grid.getValueAt(playerOperation.getPlayerSelectionX(),
-                playerOperation.getPlayerSelectionY(),
+        char value = grid.getValueAt(playerOption.getPlayerSelectionX(),
+                playerOption.getPlayerSelectionY(),
                 grid.getMineFieldLayout(), grid.getDimension());
         char valueToReplace = ' ';
-        if (playerOperation.getOperation().equals(OPERATION_OPEN)) {
+        if (playerOption.getOperation().equals(OPERATION_OPEN)) {
             if (value == SQUARE_M.charAt(0)) {
                 valueToReplace = SQUARE_M.charAt(0);
                 status = GAME_OVER;
@@ -99,12 +99,12 @@ public class Play {
                 valueToReplace = value;
                 status = SAFE_MOVE;
             }
-        } else if (playerOperation.getOperation().equals(OPERATION_FLAG)) {
+        } else if (playerOption.getOperation().equals(OPERATION_FLAG)) {
             valueToReplace = OPERATION_FLAG.charAt(0);
             status = SAFE_MOVE;
         }
-        grid.replaceValueAtPlayerLayout(playerOperation.getPlayerSelectionX(),
-                playerOperation.getPlayerSelectionY(), valueToReplace);
+        grid.replaceValueAtPlayerLayout(playerOption.getPlayerSelectionX(),
+                playerOption.getPlayerSelectionY(), valueToReplace);
         if (checkSuccessScenario(grid)) {
             status = SUCCESS;
             grid.getPlayerLayout().forEach(square -> {if(square.getValue()==SQUARE_X.charAt(0))
