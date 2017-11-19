@@ -9,3 +9,19 @@ The player uses this information to deduce the contents of other squares, and ma
 
 Class Diagram :
 ![MineSweeper - Class Diagram ](MineSweeper.png?raw=true "Optional Title")
+
+Logic :
+Grid - Grid has mineLayout, playerLayout and Dimension.Layouts are a list squares present int the grid.
+       Grid has two layouts :
+       1. minelayout which is a blue print of actual mine map.
+       2. player layout which gets updated as the player inspects each square.
+ 
+ Square - Square represents each square in a grid. It has (x,y) and a corresponding value.
+ 
+ PlayerOption - PlayerOption represents each option specified by the player.
+                It has option (o or f which is open/Flag ) to be performed at (x,y)
+                
+ Play - Inspects the selected square and intimates the result to the user.
+ 
+ LayoutBuilder - Builds mineFieldLayout and playerLayout reading input given by the player.
+
