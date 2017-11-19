@@ -27,14 +27,14 @@ Grid - Grid has mineLayout, playerLayout and Dimension.Layouts are a list square
  LayoutBuilder - Builds mineFieldLayout and playerLayout reading input given by the player.
 
 ## Sample Scenarios
-Successful Game
+### Successful Game
 ![MineSweeper - successfulgame](SampleScenarios/successfulgame.png?raw=true "Optional Title")
 
-Unsuccessful Game
+### Unsuccessful Game
 ![MineSweeper - gameover ](SampleScenarios/gameover.png?raw=true "Optional Title")
 
-Flagging
+### Flagging
 ![MineSweeper - flag ](SampleScenarios/flag.png?raw=true "Optional Title")
 
-Invalid Layout
-![MineSweeper - Class Diagram ](SampleScenarios/ivalidLayout.png?raw=true "Optional Title")
+### Invalid Layout
+![MineSweeper - Class Diagram ](SampleScenarios/InvalidLayout.png?raw=true "Optional Title")
