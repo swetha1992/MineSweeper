@@ -36,45 +36,12 @@ public class Play {
     public void startGame(Grid grid) throws IOException {
         grid.printPlayerLayout();
         do {
-            result = inspectSquare(grid, readPlayerInput());
+            PlayerOption playerOption = new PlayerOption();
+            playerOption.readPlayerOption();
+            result = inspectSquare(grid, playerOption);
             grid.printPlayerLayout();
         } while (result.equals(SAFE_MOVE));
         System.out.println(result);
-
-    }
-
-    /**
-     * reads player operation from user.
-     * @return
-     */
-    public PlayerOption readPlayerInput() {
-        System.out.println(ENTER_OPERATION);
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String playerInput = null;
-        int playerSelectionX = 0;
-        int playerSelectionY = 0;
-        String operation = null;
-        try {
-            playerInput = br.readLine();
-            StringTokenizer stringTokenizer = new StringTokenizer(playerInput, "(");
-            while (stringTokenizer.hasMoreTokens()) {
-                operation = stringTokenizer.nextToken();
-                StringTokenizer stringTokenizer1 = new StringTokenizer(stringTokenizer.nextToken(), ",");
-                while (stringTokenizer1.hasMoreTokens()) {
-                    playerSelectionX = Integer.parseInt(stringTokenizer1.nextToken());
-                    playerSelectionY = Integer.parseInt(stringTokenizer1.nextToken().replace(")", ""));
-                }
-            }
-        } catch (Exception e) {
-            System.out.println(INVALID_OPERATION);
-            readPlayerInput();
-        }
-        PlayerOption playerOption = new PlayerOption(playerSelectionX, playerSelectionY, operation);
-        if (!playerOption.isvalidOperation()) {
-            System.out.println(INVALID_OPERATION);
-            readPlayerInput();
-        }
-        return playerOption;
     }
 
     /**
@@ -87,11 +54,10 @@ public class Play {
 
     public String inspectSquare(Grid grid, PlayerOption playerOption) throws IOException {
         String status = INVALID_OPERATION;
-        char value = grid.getValueAt(playerOption.getPlayerSelectionX(),
-                playerOption.getPlayerSelectionY(),
-                grid.getMineFieldLayout(), grid.getDimension());
+        char value = grid.getValueAt(playerOption.getPlayerSelectionX(), playerOption.getPlayerSelectionY(),
+                     grid.getMineFieldLayout(), grid.getDimension());
         char valueToReplace = ' ';
-        if (playerOption.getOperation().equals(OPERATION_OPEN)) {
+        if (playerOption.getOption().equals(OPERATION_OPEN)) {
             if (value == SQUARE_M.charAt(0)) {
                 valueToReplace = SQUARE_M.charAt(0);
                 status = GAME_OVER;
@@ -99,7 +65,7 @@ public class Play {
                 valueToReplace = value;
                 status = SAFE_MOVE;
             }
-        } else if (playerOption.getOperation().equals(OPERATION_FLAG)) {
+        } else if (playerOption.getOption().equals(OPERATION_FLAG)) {
             valueToReplace = OPERATION_FLAG.charAt(0);
             status = SAFE_MOVE;
         }
