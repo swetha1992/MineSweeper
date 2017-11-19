@@ -4,11 +4,7 @@ import Minesweeper.Model.Grid;
 import Minesweeper.Model.PlayerOption;
 import Minesweeper.Utility.ReadPropertyFile;
 
-
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 /**
  * Class that reads operation from user , inspects the selected square and

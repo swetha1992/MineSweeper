@@ -30,19 +30,15 @@ public class Grid {
         this.playerLayout = playerLayout;
         this.dimension = dimension;
     }
-
     public List<Square> getMineFieldLayout() {
         return mineFieldLayout;
     }
-
     public List<Square> getPlayerLayout() {
         return playerLayout;
     }
-
     public int getDimension() {
         return dimension;
     }
-
     /**
      * prints player layout in 2D form.
      * @throws IOException
