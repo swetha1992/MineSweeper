@@ -26,3 +26,6 @@ Grid - Grid has mineLayout, playerLayout and Dimension.Layouts are a list square
  
  LayoutBuilder - Builds mineFieldLayout and playerLayout reading input given by the player.
 
+## Sample Scenarios
+Positive 
+![Success](Sample Scenarios/successful game.PNG?raw=true "Optional Title")
