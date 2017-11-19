@@ -7,14 +7,13 @@ import Minesweeper.Utility.ReadPropertyFile;
 import java.io.IOException;
 
 /**
- * Class that reads operation from user , inspects the selected square and
+ * Class that inspects the selected square and
  * intimates the result to the user.
  */
 public class Play {
 
     //Constants and error messages used in the code
     String SAFE_MOVE = ReadPropertyFile.getProperty("SAFE_MOVE");
-    String ENTER_OPERATION = ReadPropertyFile.getProperty("ENTER_OPERATION");
     String INVALID_OPERATION = ReadPropertyFile.getProperty("INVALID_OPERATION");
     String SQUARE_M = ReadPropertyFile.getProperty("SQUARE_M");
     String SQUARE_X = ReadPropertyFile.getProperty("SQUARE_X");
