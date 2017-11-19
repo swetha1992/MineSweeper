@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56f90fbd-9a8e-4828-a596-83a1c5d9e33e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sample Scenarios/Invalid Layout.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/Invalid Layout.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sample Scenarios/Invalid Option.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/Invalid Option.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sample Scenarios/flag.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/flag.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sample Scenarios/game over.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/game over.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sample Scenarios/successful game.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/successful game.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SampleScenarios/Invalid Layout.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/InvalidLayout.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SampleScenarios/Invalid Option.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/InvalidOption.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SampleScenarios/flag.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/flag.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SampleScenarios/game over.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/gameover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SampleScenarios/successful game.PNG" afterPath="$PROJECT_DIR$/SampleScenarios/successfulgame.png" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,36 +54,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flag.PNG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleScenarios/flag.PNG">
+      <file leaf-file-name="flag.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleScenarios/flag.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game over.PNG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleScenarios/game over.PNG">
+      <file leaf-file-name="gameover.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleScenarios/gameover.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Invalid Layout.PNG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleScenarios/Invalid Layout.PNG">
+      <file leaf-file-name="InvalidLayout.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleScenarios/InvalidLayout.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Invalid Option.PNG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleScenarios/Invalid Option.PNG">
+      <file leaf-file-name="InvalidOption.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleScenarios/InvalidOption.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="successful game.PNG" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SampleScenarios/successful game.PNG">
+      <file leaf-file-name="successfulgame.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SampleScenarios/successfulgame.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -739,27 +739,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleScenarios/flag.PNG">
+    <entry file="file://$PROJECT_DIR$/SampleScenarios/flag.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleScenarios/game over.PNG">
+    <entry file="file://$PROJECT_DIR$/SampleScenarios/gameover.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleScenarios/Invalid Layout.PNG">
+    <entry file="file://$PROJECT_DIR$/SampleScenarios/InvalidLayout.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleScenarios/Invalid Option.PNG">
+    <entry file="file://$PROJECT_DIR$/SampleScenarios/InvalidOption.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleScenarios/successful game.PNG">
+    <entry file="file://$PROJECT_DIR$/SampleScenarios/successfulgame.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
