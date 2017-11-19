@@ -28,4 +28,4 @@ Grid - Grid has mineLayout, playerLayout and Dimension.Layouts are a list square
 
 ## Sample Scenarios
 Positive:
-![Success](sample scenarios/flag.png?raw=true "Optional Title")
+![Success](Sample Scenarios/flag.PNG?raw=true "Optional Title")
