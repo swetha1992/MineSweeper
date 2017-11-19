@@ -7,10 +7,11 @@ On each turn, the player has to select a square (x,y) by indicating if it contai
 
 The player uses this information to deduce the contents of other squares, and may either safely reveal each square or flag the square as containing a mine. The game is won when all mine-free squares are revealed, because all mines have been located.
 
-Class Diagram :
+#Class Diagram :
 ![MineSweeper - Class Diagram ](MineSweeper.png?raw=true "Optional Title")
 
-Logic :
+#Logic :
+
 Grid - Grid has mineLayout, playerLayout and Dimension.Layouts are a list squares present int the grid.
        Grid has two layouts :
        1. minelayout which is a blue print of actual mine map.
