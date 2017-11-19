@@ -28,4 +28,4 @@ Grid - Grid has mineLayout, playerLayout and Dimension.Layouts are a list square
 
 ## Sample Scenarios
 
-![MineSweeper - Class Diagram ](Sample Scenarios/successful game.PNG?raw=true "Optional Title")
+![MineSweeper - Class Diagram ](SampleScenarios/successfulgame.png?raw=true "Optional Title")
