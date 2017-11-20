@@ -30,6 +30,7 @@ public class PlayerOption {
         return option;
     }
 
+
     /**
      * validate a operation .
      * @return
@@ -70,5 +71,16 @@ public class PlayerOption {
             System.out.println(INVALID_OPERATION);
             readPlayerOption();
         }
+    }
+    public void setPlayerSelectionX(int playerSelectionX) {
+        this.playerSelectionX = playerSelectionX;
+    }
+
+    public void setPlayerSelectionY(int playerSelectionY) {
+        this.playerSelectionY = playerSelectionY;
+    }
+
+    public void setOption(String option) {
+        this.option = option;
     }
 }
